@@ -1011,6 +1011,8 @@ with pkgs;
 
   sakura = callPackage ../applications/terminal-emulators/sakura { };
 
+  siduck76-st = callPackage ../applications/terminal-emulators/st/siduck76-st.nix { };
+
   st = callPackage ../applications/terminal-emulators/st {
     conf = config.st.conf or null;
     patches = config.st.patches or [];
